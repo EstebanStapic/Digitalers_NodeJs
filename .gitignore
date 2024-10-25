@@ -1,0 +1,10 @@
+#Dependencias
+node_modules/
+*lock.json
+#Produccion
+dist/
+.env
+#Registro
+log/
+*.log
+
