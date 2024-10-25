@@ -7,12 +7,21 @@
         <link rel="stylesheet" href="styles/default.css">
     </head>
     <body>
-        <div id="root"></div>
-
+        <header>
+            <h1>Node Paint</h1>
+            <form id="draw-options">
+                <select name="shape" id="shape">
+                    <option value="line">line</option>
+                    <option value="freehand">freehand</option>
+                    <option value="square">square</option>
+                    <option value="circle">circle</option>
+                </select>
+                <input type="color" name="fill" id="fill">
+                <input name="stroke" id="stroke" type="range" min="0" max="10">
+            </form>
+        </header>
         <script src="app/index.js" type="module"></script>
         <script src="/socket.io/socket.io.js"></script>
-        <script src=""></script>
-
 
     <script>
         if ("serviceWorker" in navigator) {
